@@ -1,0 +1,40 @@
+Next Word Predictor
+========================================================
+author: Rizky Setianda
+date: `r date()`
+autosize: true
+
+Problem & Objective
+========================================================
+- **Problem**: Typing on mobile devices is often slow and prone to errors (typos).
+- **Objective**: To build a fast and accurate word prediction algorithm to enhance the user's typing experience.
+- **Solution**: A Shiny application that predicts the next word in real-time based on the user's text input.
+
+The Prediction Algorithm
+========================================================
+This algorithm is built using **Natural Language Processing (NLP)** techniques:
+- **N-grams**: Utilizes Bigram, Trigram, and Quadgram databases sourced from news, blogs, and Twitter corpora.
+- **Simple Back-off**: If a 4-word phrase is not found, the algorithm "backs off" to search in 3-word, then 2-word tables until the best match is found.
+- **Efficiency**: Data has been cleaned (including profanity filtering) and pruned to ensure a lightweight and fast application performance.
+
+The Shiny Application
+========================================================
+The app is designed with a strong focus on user experience:
+- **Real-time Prediction**: The next word appears automatically as you type.
+- **Clean Interface**: A minimalist design that ensures easy navigation.
+- **Versatility**: Capable of handling various sentence contexts thanks to a comprehensive dataset.
+
+How to Use the App
+========================================================
+1. Access the application via the provided Shinyapps.io link.
+2. Type a word or phrase into the input field located in the left sidebar.
+3. The predicted result will immediately appear on the main panel on the right.
+4. Continue typing to see how the prediction dynamically changes based on your sentence context.
+
+Why It Matters
+========================================================
+- **Time Saving**: Significantly reduces the number of keystrokes required.
+- **Accuracy**: Assists users in choosing the right word within the correct context.
+- **Future Potential**: This algorithm can be further developed for personalized user-specific language adaptations.
+
+**Try the app now at: https://github.com/rizkys5555/rizkyriz/blob/main/Prediction.R**
